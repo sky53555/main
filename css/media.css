@@ -1,0 +1,372 @@
+@charset 'utf-8';
+
+/*********************
+pc 1200
+**********************/
+@media (max-width: 1200px) {
+  header nav {
+    padding: 1.8rem 3rem;
+  }
+  header nav ul {
+    display: none;
+  }
+  .togglePosition {
+    display: block;
+  }
+  .toggle {
+    display: block;
+  }
+  section#visual .mainText {
+    top: 14rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 5;
+  }
+  section#visual .topText {
+    width: 80vw;
+    height: 80%;
+    font-size: var(--fontSize-headline-2);
+  }
+
+  section#visual .downText {
+    text-align: center;
+    margin-top: 0.2rem;
+  }
+
+  section#visual .downText span {
+    margin-right: -15px;
+  }
+
+  section#visual .subText {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--fontSize-label-1);
+    top: 40%;
+    width: 70%;
+  }
+  section#visual .contact {
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  }
+  section#visual .space {
+    width: 700px;
+    height: 700px;
+    right: -12rem;
+    top: 22rem;
+  }
+  section#work {
+    padding-top: 10rem;
+  }
+  section#work .title {
+    flex-wrap: wrap;
+  }
+  section#work .title .btnWrap {
+    margin-top: 25px;
+  }
+  section#work .title a {
+    font-size: 1.5rem;
+  }
+  .portfolio ul li {
+    flex-wrap: wrap;
+    gap: 3rem;
+    transition: opacity 0.5s;
+  }
+  .portfolio .codeWrap {
+    flex-direction: column;
+  }
+  .portfolio .imgWrap {
+    width: 100%;
+  }
+  .portfolio .portImg {
+    width: 100%;
+    height: 40vh;
+    margin-left: 0;
+  }
+  .portfolio .textWrap {
+    width: 100%;
+  }
+  section#about {
+    padding-top: 0;
+  }
+  .aboutText {
+    margin-top: -42rem;
+  }
+  .aboutText > h2 {
+    margin-top: 0;
+  }
+  #orbit-system {
+    transform: translate(10rem, -13rem);
+  }
+  .scroller {
+    transform: translateY(0%);
+  }
+  .link ul li p {
+    font-size: var(--fontSize-body-4);
+  }
+  section#contact {
+    padding-top: 0;
+  }
+  .contactText {
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .contactText .textLeft h3 {
+    font-size: var(--fontSize-body-3);
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .contactText .textLeft {
+    width: 100%;
+    margin-right: 0;
+  }
+  .contactText .textRight {
+    width: 100%;
+    padding-top: 3rem;
+  }
+  .contactText .textLeft ul li {
+    font-size: var(--fontSize-body-4);
+  }
+  footer .content {
+    flex-wrap: wrap;
+    margin: 5rem auto 2rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .content p {
+    width: 100%;
+  }
+  footer img {
+    margin: 0 auto 40px;
+  }
+}
+/*********************
+mobile 320
+**********************/
+@media (min-width: 320px) and (max-width: 1200px) {
+  section#work {
+    padding-top: 0rem;
+    padding-bottom: 15rem;
+  }
+  section#about {
+    padding-bottom: 45rem;
+  }
+}
+/*********************
+mobile 320
+**********************/
+
+@media (max-width: 320px) {
+  header h1 img {
+    width: 50%;
+  }
+  header nav {
+    padding: 1rem 1rem;
+  }
+  section#visual {
+    min-height: 110vh;
+  }
+  section#visual .space {
+    width: 500px;
+    height: 500px;
+    right: -22rem;
+    top: 22rem;
+  }
+  section#visual .subText {
+    font-size: var(--fontSize-label-3);
+    top: 40%;
+  }
+  .portfolio .imgDes {
+    display: none;
+  }
+  section#visual .contact {
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    margin: 5rem auto;
+    top: 60%;
+  }
+  section#visual .contact p {
+    font-weight: normal;
+    font-size: var(--fontSize-label-3);
+  }
+  section#work {
+    padding-top: 0;
+    padding-bottom: 8rem;
+  }
+  section#work .title a {
+    font-size: 1rem;
+  }
+  section#work .title a:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .portfolio .imgWrap {
+    width: 100%;
+  }
+  .portfolio .portImg {
+    width: 100%;
+    height: 30vh;
+    margin-left: 0;
+  }
+
+  .portfolio .textWrap .buttons {
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .portfolio .textWrap button {
+    transform: translateX(-50%);
+    left: 50%;
+    min-width: 150px;
+  }
+  .textWrap button:nth-of-type(1) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .portfolio .textWrap h3 {
+    font-size: var(--fontSize-body-3);
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .portfolio ul li {
+    gap: 3rem;
+    padding: 2.5rem 0;
+  }
+
+  .portfolio .imgWrap {
+    height: 30vh;
+  }
+
+  section#about {
+    padding-top: 9rem;
+  }
+  #about .circle {
+    margin: 5rem auto 0;
+  }
+  .aboutText {
+    margin-top: -45rem;
+  }
+  .aboutText > h2 {
+    color: #fff;
+    font-size: var(--fontSize-label-2);
+    text-align: center;
+    width: 85%;
+  }
+  .aboutText .name {
+    transform: translate(0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 0%;
+    margin-top: 20px;
+  }
+  .aboutText span {
+    font-size: 2rem;
+  }
+  .detail_in {
+    grid-template-columns: 1fr;
+  }
+  #orbit-system {
+    display: none;
+  }
+  .scroller {
+    transform: translateY(-20%);
+    height: 10vh;
+    top: 0;
+  }
+
+  .detail {
+    margin: 5.5rem 2rem 9rem;
+  }
+  .detail_1 > ul > li {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .detail_1 ul > li > .inside {
+    margin-top: 20px;
+  }
+  .detail_1 ul > li > .inside li {
+    margin-top: 10px;
+  }
+  .detail_1 ul > li > .inside span {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .detail_1 ul > li > .inside .workplace {
+    display: inline-block;
+  }
+  .link {
+    margin-top: 1rem;
+  }
+  .link ul li {
+    width: 100%;
+  }
+  .link ul li p {
+    font-size: 1.4rem;
+  }
+  .textBanner {
+    font-size: 3rem;
+  }
+  section#about {
+    padding-bottom: 10rem;
+  }
+  section#about .mainTitle {
+    text-align: center;
+  }
+
+  /* #SECTION - contact */
+
+  section#contact {
+    padding-top: 30rem;
+  }
+
+  .contactText .textLeft ul {
+    margin-bottom: 150px;
+    white-space: wrap;
+  }
+  .contactText .textLeft h3 {
+    font-size: var(--fontSize-label-2);
+    width: 90%;
+    text-align: center;
+    margin: 3rem auto 2rem;
+    line-height: 1.5;
+  }
+  .contactText .textRight {
+    width: 100%;
+    margin-top: -6rem;
+  }
+  .contactText .textLeft ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .contactText .textLeft ul li span {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .messageForm .halfWidth {
+    flex-basis: 100%;
+  }
+
+  .contactText form button {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contactText form {
+    width: 100%;
+  }
+}

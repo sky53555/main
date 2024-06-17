@@ -1,0 +1,71 @@
+[
+  {
+    "type": "code",
+    "imgSrc": "",
+    "video": "./images/travel.mp4",
+    "imgDes": ["jquery", "swiper"],
+    "title": "TRAVEL PLUS",
+    "description": "여행사 홈페이지 기획, 디자인, 제작했습니다",
+    "date": "2024.05.20 - 2024.05.31",
+    "tags": ["#website", "#responsive"],
+    "buttons": [
+      {
+        "text": "기획 및 디자인",
+        "lightboxImg": "https://picsum.photos/id/231/200/300"
+      },
+      {
+        "text": "VIEW SITE",
+        "link": "https://example.com/view-site"
+      }
+    ]
+  },
+  {
+    "type": "code",
+    "imgSrc": "https://picsum.photos/id/232/200/300",
+    "imgDes": ["javascript", "web", "javascript", "web"],
+    "title": "CHANG",
+    "description": "건설사 사이트를 기획, 디자인 했습니다.",
+    "date": "2024.04.26-29",
+    "tags": ["#web", "#반응형", "#javascript"],
+    "buttons": [
+      {
+        "text": "기획 및 디자인",
+        "lightboxImg": "https://picsum.photos/id/232/200/300"
+      },
+      {
+        "text": "VIEW SITE",
+        "link": "https://example.com/view-site"
+      }
+    ]
+  },
+  {
+    "type": "design",
+    "imgSrc": "./images/1-1.jpg",
+    "imgDes": ["javascript", "web"],
+    "title": "BRAND",
+    "description": "운동",
+    "date": "2024.04.26-29",
+    "tags": ["#web", "#반응형", "#javascript"],
+    "buttons": [
+      {
+        "text": "디자인",
+        "lightboxImg": "./images/1-2.jpg"
+      }
+    ]
+  },
+  {
+    "type": "design",
+    "imgSrc": "./images/2-1.jpg",
+    "imgDes": ["javascript", "web"],
+    "title": "SOCIAL",
+    "description": "이건 어떤어떤 작품입니다",
+    "date": "2024.04.26-29",
+    "tags": ["#web", "#반응형", "#javascript"],
+    "buttons": [
+      {
+        "text": "디자인",
+        "lightboxImg": "./images/2-2.jpg"
+      }
+    ]
+  }
+]

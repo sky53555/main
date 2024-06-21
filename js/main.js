@@ -227,23 +227,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ///////////// Overlay and Cursor /////////////////////////////////
 
-  const overlay = document.querySelector(".overlay");
-  const cursor = document.querySelector(".cursor");
+  // const overlay = document.querySelector(".overlay");
+  // const cursor = document.querySelector(".cursor");
 
-  overlay.addEventListener("transitionend", function () {
-    if (overlay.classList.contains("active")) {
-      cursor.style.display = "block";
-      document.body.style.cursor = "none";
-    } else {
-      cursor.style.display = "none";
-      document.body.style.cursor = "default";
-    }
-  });
+  // overlay.addEventListener("transitionend", function () {
+  //   if (overlay.classList.contains("active")) {
+  //     cursor.style.display = "block";
+  //     document.body.style.cursor = "none";
+  //   } else {
+  //     cursor.style.display = "none";
+  //     document.body.style.cursor = "default";
+  //   }
+  // });
 
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = e.pageX + "px";
-    cursor.style.top = e.pageY + "px";
-  });
+  // document.addEventListener("mousemove", (e) => {
+  //   cursor.style.left = e.pageX + "px";
+  //   cursor.style.top = e.pageY + "px";
+  // });
 
   /////////////// Star Effect /////////////////////////////////////
 
@@ -354,13 +354,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const pdfUrl = "images/2024.pdf"; // PDF 파일 경로를 실제 경로로 설정하세요
 
     // 팝업 창을 화면 중앙에 나타나게 하기 위해 화면 크기와 팝업 크기를 계산합니다.
-    const width = 800;
+    const width = 1000;
     const height = 600;
-    const left = screen.width / 2 - width / 2;
     const top = screen.height / 2 - height / 2;
 
-    console.log(left);
-    console.log(top);
+    const left = screen.width / 2 - width / 2;
     const popup = window.open(
       "",
       "_blank",
@@ -377,6 +375,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   .pdf-page {
                       margin-bottom: 20px;
                   }
+             
               </style>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
           </head>

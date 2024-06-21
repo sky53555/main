@@ -39,7 +39,7 @@
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#contact">CONTACT</a></li>
           </ul>
-          <div class="cursor"></div>
+          <!-- <div class="cursor"></div> -->
         </div>
       </header>
 
@@ -139,7 +139,7 @@
                 <p class="date">2020.05 - 2021.01</p>
                 <div class="detail_text">
                 <h3></h3>
-                  <p>디자인 관련</p>
+                  <p>디자인 업무(홍보물 제작)</p>
                 </div>
               </div>
             </div>
@@ -199,8 +199,8 @@
                 <li class="btn-2 hover-slide-down">
                   <p id="pdf-link">이력서</p>
                 </li>
-                <li class="btn-2 hover-slide-up">
-                  <p><a href="https://keepdooing.tistory.com/" target="_black">블로그</a></p>
+                <li class="btn-2 hover-slide-up" style="position: relative;" >
+                  <p><a href="https://keepdooing.tistory.com/" target="_black" style="display: block; height: 100%; width: 100%; line-height: 8vh;">블로그</a></p>
                 </li>
               </ul>
             </div>
@@ -219,27 +219,27 @@
               </ul>
             </div>
             <div class="textRight">
-              <form class="messageForm">
+              <form  action="https://getform.io/f/warkdxlb" method="POST" class="messageForm">
                 <div class="inputGroup halfWidth">
-                  <input type="text" name="" required="required" />
+                  <input type="text" name="name" required="required" />
                   <label>Your Name</label>
                 </div>
-
+              
                 <div class="inputGroup halfWidth">
-                  <input type="email" name="" required="required" />
+                  <input type="email" name="email" required="required" />
                   <label>Email</label>
                 </div>
-
+              
                 <div class="inputGroup fullWidth">
-                  <input type="text" name="" required="required" />
+                  <input type="text" name="subject" required="required" />
                   <label>Subject</label>
                 </div>
-
+              
                 <div class="inputGroup fullWidth">
-                  <textarea required="required"></textarea>
+                  <textarea name="message" required="required"></textarea>
                   <label>Message</label>
                 </div>
-
+              
                 <div class="inputGroup fullWidth">
                   <button class="btn2">SEND</button>
                 </div>
@@ -247,6 +247,14 @@
             </div>
           </div>
         </section>
+<!-- 모달 구조 -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+  </div>
+</div>
+
         <!-- contact -->
       </main>
       <!-- main -->
@@ -273,6 +281,38 @@
 
 
   <script type="text/javascript">
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // 폼 기본 제출 이벤트 방지
+    var formData = new FormData(this); // 폼 데이터 생성
+
+    fetch('https://getform.io/f/warkdxlb', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        showModal('메일이 전송되었습니다.'); // 성공 모달 메시지
+    })
+    .catch((error) => {
+        showModal('전송 중 오류가 발생했습니다.'); // 오류 모달 메시지
+    });
+});
+
+function showModal(message) {
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName('close')[0];
+    document.getElementById('modalText').textContent = message;
+    modal.style.display = "block";
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
 
 
   $("#checkbox").click(function () {
@@ -300,7 +340,7 @@
 
     $("html, body")
       .stop()
-      .animate({ scrollTop: idTop - 130 + "px" }, 1000);
+      .animate({ scrollTop: idTop + "px" }, 1000);
   });
 
   function splitText() {

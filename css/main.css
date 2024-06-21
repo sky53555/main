@@ -159,7 +159,6 @@ header nav a:hover::after {
 }
 
 .toggle {
-  display: none;
   position: relative;
   width: 40px;
   cursor: pointer;
@@ -242,16 +241,19 @@ header nav a:hover::after {
   font-size: var(--fontSize-headline-1);
   color: #fff;
 }
-.overlay ul a {
-  cursor: none;
-}
+
 .overlay ul li {
   margin-bottom: 20px;
   color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+.overlay ul li:hover {
+  color: #1bca90;
 }
 
-.cursor {
-  display: none; /* 초기에는 커서 숨기기 */
+/* .cursor {
+  display: none; 
   position: fixed;
   width: 30px;
   height: 30px;
@@ -264,7 +266,7 @@ header nav a:hover::after {
   width: 80px;
   height: 80px;
   mix-blend-mode: difference;
-}
+} */
 /*-----------------------------------*\
   #SECTION
 \*-----------------------------------*/
@@ -331,6 +333,7 @@ section#visual .subText {
   letter-spacing: 1px;
   z-index: 2;
   width: 25%;
+  word-break: keep-all;
 }
 
 .letter {
@@ -413,7 +416,7 @@ section#visual .space {
 section#work {
   background: linear-gradient(to bottom, #0a0032 0%, #486a9d 100%);
   position: relative;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
 section#work .title h2 {
   text-align: left;
@@ -676,7 +679,7 @@ body.lightbox-active {
 section#about {
   background: linear-gradient(to bottom, #486a9d 0%, #ba7070 50%, #ff9aa1 100%);
   position: relative;
-  padding-bottom: 50rem;
+  padding-bottom: 40rem;
 }
 section#about .mainTitle {
   width: 75%;
@@ -886,7 +889,7 @@ section#about .mainTitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  height: 8vh;
   font-weight: bold;
   transition: 0.3s;
   position: relative;
@@ -1198,6 +1201,7 @@ section#contact .mainTitle {
 .contactText .textLeft h3 {
   font-size: var(--fontSize-body-1);
   margin-bottom: 6rem;
+  word-break: keep-all;
 }
 .contactText .textLeft ul li {
   font-size: var(--fontSize-body-3);

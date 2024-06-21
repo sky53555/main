@@ -21,7 +21,8 @@
   },
   {
     "type": "code",
-    "imgSrc": "https://picsum.photos/id/232/200/300",
+    "imgSrc": "",
+    "video": "./images/c-logo.mp4",
     "imgDes": ["javascript", "web", "javascript", "web"],
     "title": "CHANG",
     "description": "건설사 사이트를 기획, 디자인 했습니다.",

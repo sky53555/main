@@ -1,396 +1,335 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>jh portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
     <script src="js/main.js"></script>
-  </head>
-  <body id="top">
+</head>
+
+<body id="top">
     <div class="wrap" id="home">
-      <header data-header>
-        <nav>
-          <h1>
-            <a href="#"><img src="images/logo-w.png" alt="logo" /></a>
-          </h1>
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-          <div class="togglePosition">
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox" class="toggle">
-              <div class="bar bar--top"></div>
-              <div class="bar bar--middle"></div>
-              <div class="bar bar--bottom"></div>
-            </label>
-          </div>
-        </nav>
-        <div class="overlay">
-          <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-          <!-- <div class="cursor"></div> -->
-        </div>
-      </header>
+        <header data-header>
+            <nav>
+                <h1>
+                    <a href="#"><img src="images/logo-w.png" alt="logo" /></a>
+                </h1>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <div class="togglePosition">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="toggle">
+                        <div class="bar bar--top"></div>
+                        <div class="bar bar--middle"></div>
+                        <div class="bar bar--bottom"></div>
+                    </label>
+                </div>
+            </nav>
+            <div class="overlay">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <!-- <div class="cursor"></div> -->
+            </div>
+        </header>
 
-      <main>
-        <section id="visual" class="scene">
-          <div class="mainText">
-            <div class="topText">
-              <span>FIND AND MAKE</span>
-            </div>
-            <div class="downText">
-              <span>BETTER WAY</span>
-            </div>
-          </div>
-          <div class="subText">
-            아무리 어두워도 빛이 아침을 열듯 길을
-              찾아가는 사람이고 싶습니다</span
-            >
-          </div>
+        <main>
+            <section id="visual" class="scene">
+                <div class="mainText">
+                    <div class="topText">
+                        <span>FIND AND MAKE</span>
+                    </div>
+                    <div class="downText">
+                        <span>BETTER WAY</span>
+                    </div>
+                </div>
+                <div class="subText">
+                    아무리 어두워도 빛이 아침을 열듯 길을
+                    찾아가는 사람이고 싶습니다</span>
+                </div>
 
-          <div class="contact">
-            <p>이지향, Jihyang Lee</p>
-            <p>010-2039-1814</p>
-            <p>sky5355@naver.com</p>
-          </div>
+                <div class="contact">
+                    <p>이지향, Jihyang Lee</p>
+                    <p>010-2039-1814</p>
+                    <p>sky5355@naver.com</p>
+                </div>
 
-          <div class="space"></div>
-        </section>
+                <div class="space"></div>
+            </section>
 
-        <section id="work">
-          <div class="title">
-            <h2 class="mainTitle">WORK</h2>
-            <div class="btnWrap">
-              <a
-                href="#"
-                class="btn-work active"
-                data-filter="all"
-                >All</a
-              >
-              <a
-                href="#"
-                class="btn-work"
-                data-filter="code"
-                >Code</a
-              >
-              <a
-                href="#"
-                class="btn-work"
-                data-filter="design"
-                >Design</a
-              >
-            </div>
-          </div>
+            <section id="work">
+                <div class="title">
+                    <h2 class="mainTitle">WORK</h2>
+                    <div class="btnWrap">
+                        <a href="#" class="btn-work active" data-filter="all">All</a>
+                        <a href="#" class="btn-work" data-filter="code">Code</a>
+                        <a href="#" class="btn-work" data-filter="design">Design</a>
+                    </div>
+                </div>
 
-          <div class="portfolio">
-            <ul></ul>
-          </div>
-        </section>
-          <!-- Lightbox -->
-        <div class="lightbox" id="lightbox">
-          <div class="lightboxContent">
-            <span class="lightboxClose">&times;</span>
-            <div class="lightboxImageWrap">
-            <img class="lightboxImage" src="" alt="">
+                <div class="portfolio">
+                    <ul></ul>
+                </div>
+            </section>
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox">
+                <div class="lightboxContent">
+                    <span class="lightboxClose">&times;</span>
+                    <div class="lightboxImageWrap">
+                        <img class="lightboxImage" src="" alt="">
+                    </div>
+                    <div class="lightboxPrev">&#10094;</div>
+                    <div class="lightboxNext">&#10095;</div>
+                </div>
             </div>
-            <div class="lightboxPrev">&#10094;</div>
-            <div class="lightboxNext">&#10095;</div>
-          </div>
-        </div>
-        <!-- work -->
-        <section id="about">
-          <h2 class="mainTitle">ABOUT</h2>
-          <div class="circle">
-            <div
-              class="circle-inner"
-              data-parallax-item
-              data-parallax-speed="2"
-            ></div>
-            <div class="circle-inner2"></div>
-          </div>
-          <div class="aboutText">
-            <h2 data-parallax-item data-parallax-speed="1">
-              더 나은 길을 발견하고 나아가는<br />
-              <span>Web Designer</span>
-            </h2>
+            <!-- work -->
+            <section id="about">
+                <h2 class="mainTitle">ABOUT</h2>
+                <div class="circle">
+                    <div class="circle-inner" data-parallax-item data-parallax-speed="2"></div>
+                    <div class="circle-inner2"></div>
+                </div>
+                <div class="aboutText">
+                    <h2 data-parallax-item data-parallax-speed="1">
+                        더 나은 길을 발견하고 나아가는<br />
+                        <span>Web Designer</span>
+                    </h2>
 
-            <div class="detail">
-            <div class="detail_1">
-              <h2>경력</h2>
-              <div class="detail_in">
-                <p class="date">2022.03 - 2023.04</p>
-                <div class="detail_text">
-                  <h3>씨앗문화예술협동조합</h3>
-                  <p>디자인 및 프로젝트 운영</p>
-                </div>
-              </div>
-              <div class="detail_in">
-                <p class="date">2020.05 - 2021.01</p>
-                <div class="detail_text">
-                <h3></h3>
-                  <p>디자인 업무(홍보물 제작)</p>
-                </div>
-              </div>
-            </div>
-            <div class="detail_1">
-              <h2>교육</h2>
-              <div class="detail_in">
-                <p class="date">2023.12 - 2024.07</p>
-                <div class="detail_text">
-                  <h3>MBC아카데미</h3>
-                  <p>java기반 웹 프레임워크 개발자 양성과정</p>
-                </div>
-              </div>
-              <div class="detail_in">
-                <p class="date">2023.08 - 2023.12</p>
-                <div class="detail_text">
-                  <h3>종로컨텐츠 클러스터</h3>
-                  <p>영상 제작 과정</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div id="orbit-system">
-              <div class="system">
-                <div class="satellite-orbit">
-                  <div class="satellite"></div>
-                </div>
-                <div class="planet">
-                  <p>이지향 (jihyang, lee)</p>
-                  <p>010-2039-1814</p>
-                  <p>sky5355@naver.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="scroller" data-direction="left" data-speed="fast">
-              <ul class="tag-list scroller__inner">
-                <li class="gradient-text"><span></span> Flexibility</li>
-                <li class="text-outline"><span></span> 유연한</li>
-                <li><span></span> Consideration</li>
-                <li class="gradient-text"><span></span> 배려하는</li>
-                <li><span></span> Curiosity</li>
-                <li class="gradient-text"><span></span> 호기심 많은</li>
-              </ul>
-            </div>
-            <div class="scroller" data-direction="right" data-speed="slow">
-              <ul class="tag-list scroller__inner">
-                <li class="gradient-text2"><span></span> Challenge</li>
-                <li class="text-outline"><span></span> 도전적인</li>
-                <li class="gradient-text2"><span></span> Flexibility</li>
-                <li><span></span> 유연한</li>
-                <li class="text-outline"><span></span> Curiosity</li>
-                <li class="gradient-text2"><span></span> 호기심 많은</li>
-              </ul>
-            </div>
+                    <div class="detail">
+                        <div class="detail_1">
+                            <h2>경력</h2>
+                            <div class="detail_in">
+                                <p class="date">2022.03 - 2023.04</p>
+                                <div class="detail_text">
+                                    <h3>씨앗문화예술협동조합</h3>
+                                    <p>디자인 및 프로젝트 운영</p>
+                                </div>
+                            </div>
+                            <div class="detail_in">
+                                <p class="date">2020.05 - 2021.01</p>
+                                <div class="detail_text">
+                                    <h3></h3>
+                                    <p>디자인 업무(홍보물 제작)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail_1">
+                            <h2>교육</h2>
+                            <div class="detail_in">
+                                <p class="date">2023.12 - 2024.07</p>
+                                <div class="detail_text">
+                                    <h3>MBC아카데미</h3>
+                                    <p>java기반 웹 프레임워크 개발자 양성과정</p>
+                                </div>
+                            </div>
+                            <div class="detail_in">
+                                <p class="date">2023.08 - 2023.12</p>
+                                <div class="detail_text">
+                                    <h3>종로컨텐츠 클러스터</h3>
+                                    <p>영상 제작 과정</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="orbit-system">
+                        <div class="system">
+                            <div class="satellite-orbit">
+                                <div class="satellite"></div>
+                            </div>
+                            <div class="planet">
+                                <p>이지향 (jihyang, lee)</p>
+                                <p>010-2039-1814</p>
+                                <p>sky5355@naver.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroller" data-direction="left" data-speed="fast">
+                        <ul class="tag-list scroller__inner">
+                            <li class="gradient-text"><span></span> Flexibility</li>
+                            <li class="text-outline"><span></span> 유연한</li>
+                            <li><span></span> Consideration</li>
+                            <li class="gradient-text"><span></span> 배려하는</li>
+                            <li><span></span> Curiosity</li>
+                            <li class="gradient-text"><span></span> 호기심 많은</li>
+                        </ul>
+                    </div>
+                    <div class="scroller" data-direction="right" data-speed="slow">
+                        <ul class="tag-list scroller__inner">
+                            <li class="gradient-text2"><span></span> Challenge</li>
+                            <li class="text-outline"><span></span> 도전적인</li>
+                            <li class="gradient-text2"><span></span> Flexibility</li>
+                            <li><span></span> 유연한</li>
+                            <li class="text-outline"><span></span> Curiosity</li>
+                            <li class="gradient-text2"><span></span> 호기심 많은</li>
+                        </ul>
+                    </div>
 
-            <div class="link">
-              <ul>
-                <li class="btn-2 hover-slide-down">
-                  <p id="pdf-link">이력서</p>
-                </li>
-                <li class="btn-2 hover-slide-up" style="position: relative;" >
-                  <p><a href="https://keepdooing.tistory.com/" target="_black" style="display: block; height: 100%; width: 100%; line-height: 8vh;">블로그</a></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- about -->
-        <section id="contact">
-          <h2 class="mainTitle">CONTACT</h2>
-          <div class="contactText">
-            <div class="textLeft">
-              <h3>함께 할 수 있는 기회를 기다립니다.</h3>
-              <ul>
-                <li>Email <span>sky5355@naver.com</span></li>
-                <li>Phone <span>010-2039-1814</span></li>
-                <li>Address <span>서울시 강서구 강서로</span></li>
-              </ul>
-            </div>
-            <div class="textRight">
-              <form  action="https://getform.io/f/warkdxlb" method="POST" class="messageForm">
-                <div class="inputGroup halfWidth">
-                  <input type="text" name="name" required="required" />
-                  <label>Your Name</label>
+                    <div class="link">
+                        <ul>
+                            <li class="btn-2 hover-slide-down">
+                                <p id="pdf-link">이력서</p>
+                            </li>
+                            <li class="btn-2 hover-slide-up" style="position: relative;">
+                                <p><a href="https://keepdooing.tistory.com/" target="_black" style="display: block; height: 100%; width: 100%;">블로그</a></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              
-                <div class="inputGroup halfWidth">
-                  <input type="email" name="email" required="required" />
-                  <label>Email</label>
-                </div>
-              
-                <div class="inputGroup fullWidth">
-                  <input type="text" name="subject" required="required" />
-                  <label>Subject</label>
-                </div>
-              
-                <div class="inputGroup fullWidth">
-                  <textarea name="message" required="required"></textarea>
-                  <label>Message</label>
-                </div>
-              
-                <div class="inputGroup fullWidth">
-                  <button class="btn2">SEND</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-<!-- 모달 구조 -->
-<div id="myModal" class="modal">
-  <div class="modal-content">
-      <span class="close">&times;</span>
-      <p id="modalText"></p>
-  </div>
-</div>
+            </section>
+            <!-- about -->
+            <section id="contact">
+                <h2 class="mainTitle">CONTACT</h2>
+                <div class="contactText">
+                    <div class="textLeft">
+                        <h3>함께 할 수 있는 기회를 기다립니다.</h3>
+                        <ul>
+                            <li>Email <span>sky5355@naver.com</span></li>
+                            <li>Phone <span>010-2039-1814</span></li>
+                            <li>Address <span>서울시 강서구 강서로</span></li>
+                        </ul>
+                    </div>
+                    <div class="textRight">
+                        <form action="https://getform.io/f/warkdxlb" method="POST" class="messageForm">
+                            <div class="inputGroup halfWidth">
+                                <input type="text" name="name" required="required" />
+                                <label>Your Name</label>
+                            </div>
 
-        <!-- contact -->
-      </main>
-      <!-- main -->
-      <footer>
-        <div class="content">
-          <img src="images/logo-b.png" alt="" />
-          <p>© 2024 ji hyang Lee. All rights reserved.</p>
-        </div>
-      </footer>
+                            <div class="inputGroup halfWidth">
+                                <input type="email" name="email" required="required" />
+                                <label>Email</label>
+                            </div>
 
-      <!-- 
+                            <div class="inputGroup fullWidth">
+                                <input type="text" name="subject" required="required" />
+                                <label>Subject</label>
+                            </div>
+
+                            <div class="inputGroup fullWidth">
+                                <textarea name="message" required="required"></textarea>
+                                <label>Message</label>
+                            </div>
+
+                            <div class="inputGroup fullWidth">
+                                <button class="btn2">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+       
+            <!-- contact -->
+        </main>
+        <!-- main -->
+        <footer>
+            <div class="content">
+                <img src="images/logo-b.png" alt="" />
+                <p>© 2024 ji hyang Lee. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- 
       - #BACK TO TOP
       -->
-      <button class="backTopBtn">
-        <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
-          <path
-            d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
-          ></path>
-        </svg>
-        <p class="text">Back to Top</p>
-      </button>
+        <button class="backTopBtn">
+            <svg height="1.2em" class="arrow" viewBox="0 0 512 512">
+                <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+            </svg>
+            <p class="text">Back to Top</p>
+        </button>
 
     </div>
 
 
-  <script type="text/javascript">
-document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // 폼 기본 제출 이벤트 방지
-    var formData = new FormData(this); // 폼 데이터 생성
+    <script type="text/javascript">
+        //오버레이
+        $("#checkbox").click(function() {
+            $(".overlay").toggleClass("active");
+        });
 
-    fetch('https://getform.io/f/warkdxlb', {
-        method: 'POST',
-        body: formData,
-    })
-    .then(response => {
-        showModal('메일이 전송되었습니다.'); // 성공 모달 메시지
-    })
-    .catch((error) => {
-        showModal('전송 중 오류가 발생했습니다.'); // 오류 모달 메시지
-    });
-});
+        //네비 및 오버레이 클릭 후 이동
+        $("header nav ul li a").click(function(e) {
+            e.preventDefault();
 
-function showModal(message) {
-    var modal = document.getElementById('myModal');
-    var span = document.getElementsByClassName('close')[0];
-    document.getElementById('modalText').textContent = message;
-    modal.style.display = "block";
+            const id = $(this).attr("href");
+            const idTop = $(id).offset().top;
 
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+            $("html, body")
+                .stop()
+                .animate({
+                    scrollTop: idTop - 100 + "px"
+                }, 1000);
+        });
 
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        $(".overlay li").click(function(e) {
+            $(this).closest(".overlay").removeClass("active");
+
+            e.preventDefault();
+            $("#checkbox").prop("checked", false);
+            const id = $(this).find("a").attr("href");
+            const idTop = $(id).offset().top;
+
+            $("html, body")
+                .stop()
+                .animate({
+                    scrollTop: idTop + "px"
+                }, 1000);
+        });
+
+        //텍스트 효과
+        function splitText() {
+            var context = $(".subText"),
+                text = context.text().trim(), // 문자열의 앞뒤 공백을 제거
+                letters = text.split(""), // 각 글자로 분리
+                markup = "";
+
+            letters.forEach(function(letter) {
+                if (letter === " ") {
+                    // 공백인 경우에는 span 요소를 추가하지 않음
+                    markup += " ";
+                } else {
+                    markup += '<span class="letter">' + letter + "</span>";
+                }
+            });
+
+            context.html(markup);
         }
-    }
-}
 
+        // 텍스트를 각 글자로 분리하여 span 요소로 감싸는 함수 호출
+        splitText();
 
-  $("#checkbox").click(function () {
-    $(".overlay").toggleClass("active");
-  });
+        // 애니메이션 시작을 지연시키는 함수
+        function delayedAnimation() {
+            var opac = anime({
+                targets: ".letter",
+                opacity: 1,
+                scale: 1,
+                easing: "easeInBounce",
+                delay: function(el, index) {
+                    return index * 100;
+                },
+            });
+        }
 
-  $("header nav ul li a").click(function (e) {
-    e.preventDefault();
-
-    const id = $(this).attr("href");
-    const idTop = $(id).offset().top;
-
-    $("html, body")
-      .stop()
-      .animate({ scrollTop: idTop - 100 + "px" }, 1000);
-  });
-
-  $(".overlay li").click(function (e) {
-    $(this).closest(".overlay").removeClass("active");
-
-    e.preventDefault();
-    $("#checkbox").prop("checked", false);
-    const id = $(this).find("a").attr("href");
-    const idTop = $(id).offset().top;
-
-    $("html, body")
-      .stop()
-      .animate({ scrollTop: idTop + "px" }, 1000);
-  });
-
-  function splitText() {
-    var context = $(".subText"),
-      text = context.text().trim(), // 문자열의 앞뒤 공백을 제거
-      letters = text.split(""), // 각 글자로 분리
-      markup = "";
-
-    letters.forEach(function (letter) {
-      if (letter === " ") {
-        // 공백인 경우에는 span 요소를 추가하지 않음
-        markup += " ";
-      } else {
-        markup += '<span class="letter">' + letter + "</span>";
-      }
-    });
-
-    context.html(markup);
-  }
-
-  // 텍스트를 각 글자로 분리하여 span 요소로 감싸는 함수 호출
-  splitText();
-
-  // 애니메이션 시작을 지연시키는 함수
-  function delayedAnimation() {
-    var opac = anime({
-      targets: ".letter",
-      opacity: 1,
-      scale: 1,
-      easing: "easeInBounce",
-      delay: function (el, index) {
-        return index * 100;
-      },
-    });
-  }
-
-    // 1초 후에 애니메이션 시작
-    setTimeout(delayedAnimation, 4000);
-
-
+        // 1초 후에 애니메이션 시작
+        setTimeout(delayedAnimation, 4000);
     </script>
-    
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
-  </body>
+</body>
+
 </html>

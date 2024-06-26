@@ -3,7 +3,7 @@
 /*********************
 769부터 이상
 **********************/
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1280px) {
   header nav {
     padding: 1.8rem 3rem;
   }
@@ -67,9 +67,7 @@
     gap: 3rem;
     transition: opacity 0.5s;
   }
-  .portfolio .codeWrap {
-    flex-direction: column;
-  }
+
   .portfolio .imgWrap {
     width: 100%;
   }
@@ -91,7 +89,7 @@
     margin-top: 0;
   }
   #orbit-system {
-    transform: translate(10rem, -13rem);
+    transform: translate(18rem, -13rem);
   }
   .scroller {
     transform: translateY(0%);
@@ -513,6 +511,8 @@ mobile 320
   }
   .link ul li p {
     font-size: 1.4rem;
+    height: 10vh;
+    line-height: 10vh;
   }
   .textBanner {
     font-size: 3rem;

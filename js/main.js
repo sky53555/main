@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (button.text === "VIEW SITE") {
               return `
               <button class="btn2">
-                <a href="${button.link}" style="color: inherit; text-decoration: none;">
+                <a href="${button.link}" style="color: inherit; text-decoration: none; " target="_blank">
                   ${button.text}
                 </a>
               </button>

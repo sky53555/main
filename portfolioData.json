@@ -6,16 +6,16 @@
     "imgDes": ["jquery", "swiper"],
     "title": "TRAVEL PLUS",
     "description": "여행사 홈페이지 기획, 디자인, 제작했습니다",
-    "date": "2024.05.20 - 2024.05.31",
+    "date": "2024.06.03 - 2024.06.14",
     "tags": ["#website", "#responsive"],
     "buttons": [
       {
         "text": "기획 및 디자인",
-        "lightboxImg": "https://picsum.photos/id/231/200/300"
+        "lightboxImg": "./images/c1-1.jpg"
       },
       {
         "text": "VIEW SITE",
-        "link": "https://example.com/view-site"
+        "link": "https://sky53555.github.io/site2/index.html"
       }
     ]
   },
@@ -23,49 +23,49 @@
     "type": "code",
     "imgSrc": "",
     "video": "./images/c-logo.mp4",
-    "imgDes": ["javascript", "web", "javascript", "web"],
+    "imgDes": ["javascript"],
     "title": "CHANG",
     "description": "건설사 사이트를 기획, 디자인 했습니다.",
-    "date": "2024.04.26-29",
-    "tags": ["#web", "#반응형", "#javascript"],
+    "date": "2024.06.17- 2024.06.28",
+    "tags": ["#website", "#responsive"],
     "buttons": [
       {
         "text": "기획 및 디자인",
-        "lightboxImg": "https://picsum.photos/id/232/200/300"
+        "lightboxImg": "./images/c2-1.jpg"
       },
       {
         "text": "VIEW SITE",
-        "link": "https://example.com/view-site"
+        "link": "https://sky53555.github.io/site1/index.html"
       }
     ]
   },
   {
     "type": "design",
-    "imgSrc": "./images/1-1.jpg",
-    "imgDes": ["javascript", "web"],
+    "imgSrc": "./images/d1-1.jpg",
+    "imgDes": ["브랜드"],
     "title": "BRAND",
-    "description": "운동",
-    "date": "2024.04.26-29",
-    "tags": ["#web", "#반응형", "#javascript"],
+    "description": "운동 브랜드를 기획 및 디자인했습니다",
+    "date": "2024.04.12- 2024.04.19",
+    "tags": ["#브랜드", "#일러스트", "#포토샵"],
     "buttons": [
       {
         "text": "디자인",
-        "lightboxImg": "./images/1-2.jpg"
+        "lightboxImg": "./images/d1-2.jpg"
       }
     ]
   },
   {
     "type": "design",
-    "imgSrc": "./images/2-1.jpg",
-    "imgDes": ["javascript", "web"],
-    "title": "SOCIAL",
-    "description": "이건 어떤어떤 작품입니다",
-    "date": "2024.04.26-29",
-    "tags": ["#web", "#반응형", "#javascript"],
+    "imgSrc": "./images/d2-1.jpg",
+    "imgDes": ["UIUX"],
+    "title": "UIUX",
+    "description": "술 브랜드의 UI를 기획 및 디자인했습니다",
+    "date": "2024.05.13- 2024.05.19",
+    "tags": ["#uiux", "#디자인", "#피그마"],
     "buttons": [
       {
         "text": "디자인",
-        "lightboxImg": "./images/2-2.jpg"
+        "lightboxImg": "./images/d2-2.jpg"
       }
     ]
   }

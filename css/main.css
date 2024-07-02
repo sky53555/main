@@ -76,8 +76,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
-body {
+body,
+html {
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
 }
 /*-----------------------------------*\
   #COMMON

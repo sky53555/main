@@ -212,9 +212,11 @@ tablet
   }
   section#about {
     padding-top: 8rem;
-    padding-bottom: 25rem;
+    padding-bottom: 30rem;
   }
-
+  .link ul li p {
+    font-size: 1.5rem;
+  }
   #orbit-system {
     transform: translate(14rem, -10rem);
   }
@@ -247,10 +249,10 @@ tablet
   }
 }
 /*********************
-mobile 320
+mobile 375
 **********************/
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   header nav ul {
     display: none;
   }
@@ -264,6 +266,13 @@ mobile 320
   }
   .overlay ul {
     font-size: 2rem;
+  }
+
+  header h1 img {
+    width: 50%;
+  }
+  header nav {
+    padding: 1rem 1rem;
   }
   /***** Spin Animation *****/
 
@@ -336,20 +345,12 @@ mobile 320
     transform: translateX(-50%);
     width: fit-content;
     text-align: center;
-    bottom: 6.5rem;
+    bottom: 4rem;
   }
   section#visual .contact p {
     font-size: 1rem;
   }
-  header h1 img {
-    width: 50%;
-  }
-  header nav {
-    padding: 1rem 1rem;
-  }
-  section#visual {
-    min-height: 110vh;
-  }
+
   section#visual .space {
     width: 400px;
     height: 400px;
@@ -359,9 +360,183 @@ mobile 320
   section#work .title {
     flex-wrap: wrap;
   }
+  .lightboxPrev,
+  .lightboxNext {
+    font-size: 1.5rem;
+  }
   .btnWrap {
     margin-top: 2rem;
   }
+
+  .aboutText {
+    margin-top: -45rem;
+  }
+
+  .aboutText > h2 {
+    color: #fff;
+    font-size: var(--fontSize-label-2);
+    text-align: center;
+    width: 85%;
+    margin-top: -5rem;
+    word-break: keep-all;
+  }
+  .aboutText .name {
+    transform: translate(0, 0);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 0%;
+    margin-top: 20px;
+  }
+  .aboutText span {
+    font-size: 2rem;
+  }
+  #about .circle {
+    margin: 5rem auto 0;
+  }
+  .detail_in {
+    grid-template-columns: 1fr;
+  }
+  .detail {
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    width: 70%;
+    white-space: wrap;
+  }
+  .detail_1 > h2 {
+    font-size: 1.3rem;
+  }
+  .detail_text h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .detail_1 > ul > li {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .detail_1 ul > li > .inside {
+    margin-top: 20px;
+  }
+  .detail_1 ul > li > .inside li {
+    margin-top: 10px;
+  }
+  .detail_1 ul > li > .inside span {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .detail_1 ul > li > .inside .workplace {
+    display: inline-block;
+  }
+  #orbit-system {
+    transform: translate(3rem, -8rem);
+  }
+  .scroller {
+    top: -10rem;
+  }
+  .link {
+    margin-top: -8rem;
+  }
+  .link ul li {
+    width: 100%;
+  }
+  .link ul li p {
+    font-size: 1.4rem;
+    height: 10vh;
+    line-height: 10vh;
+  }
+
+  /* #SECTION - contact */
+
+  section#contact {
+    padding-top: 5rem;
+    min-height: 30vh;
+  }
+  .contactText {
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  section#contact .mainTitle {
+    text-align: center;
+  }
+  .contactText .textLeft {
+    margin-top: 1rem;
+    width: 80%;
+  }
+  .contactText .textLeft ul {
+    margin-bottom: 150px;
+    white-space: wrap;
+  }
+  .contactText .textLeft h3 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 2rem auto 2rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+  .contactText .textRight {
+    width: 90%;
+    margin-top: -6rem;
+  }
+  .contactText .textLeft ul li {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .contactText .textLeft ul li span {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .messageForm .halfWidth {
+    flex-basis: 100%;
+  }
+  .textRight .messageForm {
+    justify-content: center;
+  }
+  .contactText form button {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .textRight .inputGroup:last-child {
+    text-align: center;
+  }
+  .contactText form {
+    width: 100%;
+  }
+  footer .content {
+    justify-content: center;
+    margin-top: 35rem;
+  }
+  footer .content p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+/*********************
+mobile 320
+**********************/
+
+@media (max-width: 320px) {
+  section#visual .contact {
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    text-align: center;
+    bottom: 6rem;
+  }
+  section#visual .contact p {
+    font-size: 0.8rem;
+  }
+  section#visual {
+    min-height: 110vh;
+  }
+
   section#work {
     padding-top: 4rem;
     padding-bottom: 8rem;
@@ -433,33 +608,18 @@ mobile 320
     padding-top: 5rem;
     padding-bottom: 25rem;
   }
+
+  section#about .mainTitle {
+    text-align: center;
+  }
   #about .circle {
     margin: 5rem auto 0;
   }
-  .aboutText {
-    margin-top: -45rem;
+  .link {
+    margin-top: 0rem;
   }
-
-  .aboutText > h2 {
-    color: #fff;
-    font-size: var(--fontSize-label-2);
-    text-align: center;
-    width: 85%;
-    margin-top: -2rem;
-    word-break: keep-all;
-  }
-  .aboutText .name {
-    transform: translate(0, 0);
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 0%;
-    margin-top: 20px;
-  }
-  .aboutText span {
-    font-size: 2rem;
-  }
-  .detail_in {
-    grid-template-columns: 1fr;
+  .link ul li p {
+    font-size: 1.2rem;
   }
   #orbit-system {
     display: none;
@@ -470,126 +630,14 @@ mobile 320
     height: fit-content;
   }
 
-  .detail {
-    margin: 0 auto;
-    padding-top: 3rem;
-    padding-bottom: 6rem;
-    width: 70%;
-    white-space: wrap;
-  }
-  .detail_1 > h2 {
-    font-size: 1.3rem;
-  }
-  .detail_text h3 {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-  .detail_1 > ul > li {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  .detail_1 ul > li > .inside {
-    margin-top: 20px;
-  }
-  .detail_1 ul > li > .inside li {
-    margin-top: 10px;
-  }
-  .detail_1 ul > li > .inside span {
-    font-size: 1rem;
-    font-weight: normal;
-  }
-  .detail_1 ul > li > .inside .workplace {
-    display: inline-block;
-  }
-  .link {
-    margin-top: 0rem;
-  }
-  .link ul li {
-    width: 100%;
-  }
-  .link ul li p {
-    font-size: 1.4rem;
-    height: 10vh;
-    line-height: 10vh;
-  }
   .textBanner {
     font-size: 3rem;
   }
 
-  section#about .mainTitle {
-    text-align: center;
-  }
-
-  /* #SECTION - contact */
-
   section#contact {
-    padding-top: 5rem;
-    min-height: 30vh;
-  }
-  .contactText {
-    margin: 0 auto;
-    gap: 0rem;
-  }
-  section#contact .mainTitle {
-    text-align: center;
-  }
-  .contactText .textLeft {
-    margin-top: 1rem;
-    width: 80%;
-  }
-  .contactText .textLeft ul {
-    margin-bottom: 150px;
-    white-space: wrap;
-  }
-  .contactText .textLeft h3 {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    margin: 2rem auto 2rem;
-    line-height: 1.5;
-    word-break: keep-all;
-  }
-  .contactText .textRight {
-    width: 90%;
-    margin-top: -6rem;
-  }
-  .contactText .textLeft ul li {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  .contactText .textLeft ul li span {
-    margin-left: 0;
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    margin-top: 5px;
-  }
-  .messageForm .halfWidth {
-    flex-basis: 100%;
-  }
-  .textRight .messageForm {
-    justify-content: center;
-  }
-  .contactText form button {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .textRight .inputGroup:last-child {
-    text-align: center;
-  }
-  .contactText form {
-    width: 100%;
+    padding-top: 7rem;
   }
   footer .content {
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  footer .content p {
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 5rem;
   }
 }

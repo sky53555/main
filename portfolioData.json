@@ -41,11 +41,12 @@
   },
   {
     "type": "design",
-    "imgSrc": "./images/d1-1.jpg",
+    "imgSrc": "",
+    "video": "./images/card.mp4",
     "imgDes": ["브랜드"],
     "title": "BRAND",
     "description": "운동 브랜드를 기획 및 디자인했습니다",
-    "date": "2024.04.12- 2024.04.19",
+    "date": "2024.06.24- 2024.06.26",
     "tags": ["#브랜드", "#일러스트", "#포토샵"],
     "buttons": [
       {
@@ -56,16 +57,16 @@
   },
   {
     "type": "design",
-    "imgSrc": "./images/d2-1.jpg",
-    "imgDes": ["UIUX"],
-    "title": "UIUX",
-    "description": "술 브랜드의 UI를 기획 및 디자인했습니다",
-    "date": "2024.05.13- 2024.05.19",
-    "tags": ["#uiux", "#디자인", "#피그마"],
+    "imgSrc": "./images/d3-1.png",
+    "imgDes": ["캐릭터"],
+    "title": "캐릭터 디자인",
+    "description": "교정센터의 캐릭터를 디자인했습니다",
+    "date": "2024.06.27- 2024.06.29",
+    "tags": ["#캐릭터", "#디자인", "#일러스트"],
     "buttons": [
       {
         "text": "디자인",
-        "lightboxImg": "./images/d2-2.jpg"
+        "lightboxImg": "./images/d3-2.jpg"
       }
     ]
   }

@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.video
                   ? `
                   <div class="video-container">
-                    <video class="portfolio-video" muted loop playsinline poster="${item.imgSrc}">
+                  <video class="portfolio-video" muted loop playsinline poster="${item.imgSrc}" preload="auto">
                       <source src="${item.video}" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>

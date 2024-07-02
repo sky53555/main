@@ -16,67 +16,99 @@ document.addEventListener("DOMContentLoaded", () => {
           .map((button, btnIndex) => {
             if (button.text === "VIEW SITE") {
               return `
-              <button class="btn2">
-                <a href="${button.link}" style="color: inherit; text-decoration: none; " target="_blank">
-                  ${button.text}
-                </a>
-              </button>
-            `;
+            <button class="btn2">
+              <a href="${button.link}" style="color: inherit; text-decoration: none; " target="_blank">
+                ${button.text}
+              </a>
+            </button>
+          `;
             } else {
               return `
-              <button class="border-gradient border-gradient-purple lightbox-trigger" data-lightbox-img="${button.lightboxImg}" data-filter="${item.type}" data-index="${index}">
-                ${button.text}
-              </button>
-            `;
+            <button class="border-gradient border-gradient-purple lightbox-trigger" data-lightbox-img="${button.lightboxImg}" data-filter="${item.type}" data-index="${index}">
+              ${button.text}
+            </button>
+          `;
             }
           })
           .join("");
 
         listItem.innerHTML = `
-          <div class="codeWrap">
-            <div class="imgWrap">
-              <div class="portImg">
-                           ${
-                             item.video
-                               ? `<video class="portfolio-video" muted loop>
-                     <source src="${item.video}" type="video/mp4">
-                     Your browser does not support the video tag.
-                   </video>`
-                               : `<img src="${item.imgSrc}" alt="">`
-                           }
-              </div>
-              <div class="imgDes">
-                ${item.imgDes.map((desc) => `<span>${desc}</span>`).join("")}
-              </div>
+        <div class="codeWrap">
+          <div class="imgWrap">
+            <div class="portImg">
+              ${
+                item.video
+                  ? `
+                  <div class="video-container">
+                    <video class="portfolio-video" muted loop playsinline poster="${item.imgSrc}">
+                      <source src="${item.video}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="loading-overlay">로딩 중...</div>
+                  </div>
+                  `
+                  : `<img src="${item.imgSrc}" alt="">`
+              }
             </div>
-            <div class="textWrap">
-              <h3>${item.title}</h3>
-              <p>${item.description}</p>
-              <p>${item.date}</p>
-              ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
-              <div class="buttons">
-                ${buttonsHTML}
-              </div>
+            <div class="imgDes">
+              ${item.imgDes.map((desc) => `<span>${desc}</span>`).join("")}
             </div>
           </div>
-        `;
+          <div class="textWrap">
+            <h3>${item.title}</h3>
+            <p>${item.description}</p>
+            <p>${item.date}</p>
+            ${item.tags.map((tag) => `<span>${tag}</span>`).join("")}
+            <div class="buttons">
+              ${buttonsHTML}
+            </div>
+          </div>
+        </div>
+      `;
         portfolioContainer.appendChild(listItem);
 
-        // 비디오 호버 이벤트 추가
-        const video = listItem.querySelector("video.portfolio-video");
-        if (video) {
-          listItem
-            .querySelector(".portImg")
-            .addEventListener("mouseenter", () => {
+        // 비디오 이벤트 처리
+        const videoContainer = listItem.querySelector(".video-container");
+        if (videoContainer) {
+          const video = videoContainer.querySelector("video");
+          const loadingOverlay =
+            videoContainer.querySelector(".loading-overlay");
+
+          video.addEventListener("loadeddata", () => {
+            loadingOverlay.style.display = "none";
+          });
+
+          video.addEventListener("error", () => {
+            loadingOverlay.textContent = "비디오 로딩 실패";
+          });
+
+          const togglePlay = () => {
+            if (video.paused) {
               video.play();
-              video.muted = true; // 비디오 음소거
-            });
-          listItem
-            .querySelector(".portImg")
-            .addEventListener("mouseleave", () => {
+            } else {
               video.pause();
-              video.currentTime = 0; // 비디오를 처음으로 되돌리기
-            });
+            }
+          };
+
+          // 데스크탑 호버 이벤트
+          videoContainer.addEventListener("mouseenter", () => {
+            video.play();
+          });
+
+          videoContainer.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+          });
+
+          // 모바일 터치 및 모든 기기 클릭 이벤트
+          videoContainer.addEventListener("touchstart", (e) => {
+            e.preventDefault();
+            togglePlay();
+          });
+
+          videoContainer.addEventListener("click", () => {
+            togglePlay();
+          });
         }
       });
 

@@ -73,7 +73,6 @@
   }
   .portfolio .portImg {
     width: 100%;
-    height: 40vh;
     margin-left: 0;
   }
   .portfolio .textWrap {
@@ -226,26 +225,66 @@ tablet
   .link {
     margin-top: -10rem;
   }
+
   .contactText {
-    margin-bottom: 5rem;
+    margin: 0 auto;
+    gap: 0rem;
+  }
+  section#contact .mainTitle {
+    width: 85%;
+  }
+  .contactText .textLeft {
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .contactText .textLeft ul {
+    margin-bottom: 150px;
+    white-space: wrap;
   }
   .contactText .textLeft h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+    margin: 2rem auto 2rem;
+    line-height: 1.5;
     word-break: keep-all;
+  }
+  .contactText .textRight {
+    width: 90%;
+    margin-top: -6rem;
   }
   .contactText .textLeft ul li {
     font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
   }
   .contactText .textLeft ul li span {
-    display: block;
     margin-left: 0;
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 5px;
   }
-
-  section#contact {
-    padding-top: 8rem;
+  .contactText form button {
+    width: 90%;
+    text-align: center;
+  }
+  .contactText form {
+    width: 100%;
+  }
+  .textRight .inputGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textRight .inputGroup section#contact {
+    padding-top: 5rem;
     padding-bottom: 5rem;
     height: 95vh !important;
     min-height: initial;
+  }
+  footer {
+    padding-top: 10rem;
   }
 }
 /*********************
@@ -450,15 +489,16 @@ mobile 375
   /* #SECTION - contact */
 
   section#contact {
-    padding-top: 5rem;
+    padding-top: 15rem;
     min-height: 30vh;
+  }
+
+  section#contact .mainTitle {
+    text-align: center;
   }
   .contactText {
     margin: 0 auto;
     gap: 0rem;
-  }
-  section#contact .mainTitle {
-    text-align: center;
   }
   .contactText .textLeft {
     margin-top: 1rem;
@@ -492,26 +532,27 @@ mobile 375
     font-size: 1.2rem;
     margin-top: 5px;
   }
+  .contactText form button {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .contactText form {
+    width: 100%;
+  }
   .messageForm .halfWidth {
     flex-basis: 100%;
   }
   .textRight .messageForm {
     justify-content: center;
   }
-  .contactText form button {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
+
   .textRight .inputGroup:last-child {
     text-align: center;
   }
-  .contactText form {
-    width: 100%;
-  }
+
   footer .content {
     justify-content: center;
-    margin-top: 35rem;
   }
   footer .content p {
     margin-top: 2rem;
@@ -550,6 +591,7 @@ mobile 320
   .portfolio .codeWrap {
     gap: 3rem;
     text-align: center;
+    font-size: 0.9rem;
   }
   .portfolio .imgWrap {
     width: 100%;
@@ -557,7 +599,6 @@ mobile 320
   }
   .portfolio .portImg {
     width: 100%;
-    height: 30vh;
     margin-left: 0;
   }
 
@@ -578,23 +619,23 @@ mobile 320
   }
 
   .portfolio .textWrap h3 {
-    font-size: var(--fontSize-body-3);
+    font-size: var(--fontSize-body-4);
     color: #fff;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 40px;
   }
-  .portfolio .textWrap span {
+  .portfolio .textWrap p:nth-of-type(1) {
     font-size: 1rem;
+  }
+  .portfolio .textWrap span {
+    font-size: 0.7rem;
   }
   .portfolio ul li {
     gap: 3rem;
     padding: 2.5rem 0;
   }
 
-  .portfolio .imgWrap {
-    height: 30vh;
-  }
   .lightboxClose {
     font-size: 2rem;
     top: 0;

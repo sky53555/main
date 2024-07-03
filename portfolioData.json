@@ -1,7 +1,7 @@
 [
   {
     "type": "code",
-    "imgSrc": "./images/travel_poster.png",
+    "imgSrc": "./images/travel_poster.jpg",
     "video": "./images/travel.mp4",
     "imgDes": ["jquery", "swiper"],
     "title": "TRAVEL PLUS",
@@ -21,7 +21,7 @@
   },
   {
     "type": "code",
-    "imgSrc": "./images/chang_poster.png",
+    "imgSrc": "./images/chang_poster.jpg",
     "video": "./images/c-logo.mp4",
     "imgDes": ["javascript"],
     "title": "CHANG",
@@ -41,7 +41,7 @@
   },
   {
     "type": "design",
-    "imgSrc": "./images/card_poster.png",
+    "imgSrc": "./images/card_poster.jpg",
     "video": "./images/card.mp4",
     "imgDes": ["브랜드"],
     "title": "BRAND",

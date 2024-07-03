@@ -39,13 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
               ${
                 item.video
                   ? `
-                  <div class="video-container">
-                  <video class="portfolio-video" muted loop playsinline poster="${item.imgSrc}" preload="auto">
-                      <source src="${item.video}" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video>
-                    <div class="loading-overlay">로딩 중...</div>
-                  </div>
+                <div class="video-container">
+                <video class="portfolio-video" muted loop playsinline poster="${item.imgSrc}" preload="metadata">
+                    <source src="${item.video}" type="video/mp4">
+                    <img src="${item.imgSrc}" alt="${item.title}">
+                  </video>
+                  <div class="loading-overlay">로딩 중...</div>
+                </div>
                   `
                   : `<img src="${item.imgSrc}" alt="">`
               }
@@ -69,22 +69,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 비디오 이벤트 처리
         const videoContainer = listItem.querySelector(".video-container");
+
         if (videoContainer) {
           const video = videoContainer.querySelector("video");
+
           const loadingOverlay =
             videoContainer.querySelector(".loading-overlay");
 
-          video.addEventListener("loadeddata", () => {
+          video.addEventListener("loadedmetadata", () => {
             loadingOverlay.style.display = "none";
           });
 
-          video.addEventListener("error", () => {
-            loadingOverlay.textContent = "비디오 로딩 실패";
+          video.addEventListener("waiting", () => {
+            loadingOverlay.textContent = "버퍼링 중...";
+          });
+
+          video.addEventListener("canplay", () => {
+            loadingOverlay.style.display = "none";
+          });
+
+          video.addEventListener("error", (e) => {
+            console.error(
+              "비디오 또는 포스터 이미지 로딩 실패:",
+              e.target.error.message
+            );
+            loadingOverlay.textContent = "미디어 로딩 실패";
           });
 
           const togglePlay = () => {
             if (video.paused) {
-              video.play();
+              video.play().catch((error) => {
+                console.log("재생 실패:", error);
+              });
             } else {
               video.pause();
             }
@@ -92,7 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // 데스크탑 호버 이벤트
           videoContainer.addEventListener("mouseenter", () => {
-            video.play();
+            video.play().catch((error) => {
+              console.log("자동 재생 실패:", error);
+            });
           });
 
           videoContainer.addEventListener("mouseleave", () => {

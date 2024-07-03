@@ -135,10 +135,11 @@
     margin: 0 auto 40px;
   }
 }
+
 /*********************
 tablet
 **********************/
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
   header nav {
     padding: 1.8rem 3rem;
   }
@@ -284,7 +285,74 @@ tablet
     min-height: initial;
   }
   footer {
-    padding-top: 10rem;
+    padding-top: 5rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 576px) {
+  section#visual .mainText {
+    top: 14rem;
+  }
+  section#visual .topText {
+    font-size: 2rem;
+  }
+
+  section#visual .downText {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 3rem;
+  }
+  section#visual .subText {
+    font-size: 1.2rem;
+  }
+
+  section#visual .contact {
+    bottom: 4rem;
+  }
+  section#visual .contact p {
+    font-size: 1rem;
+  }
+  section#visual .space {
+    top: 13rem;
+    right: -34rem;
+  }
+  section#work .title {
+    flex-wrap: wrap;
+  }
+  section#contact {
+    padding-top: 5rem;
+  }
+  section#work .title .btnWrap {
+    margin-top: 1rem;
+  }
+  section#about {
+    padding-top: 5rem;
+  }
+  .aboutText > h2 {
+    width: 70%;
+    margin-top: 2rem;
+  }
+  #about .circle {
+    margin: 5rem auto 0;
+  }
+  .detail {
+    width: 80%;
+    margin: 4rem auto 0;
+  }
+  .link {
+    margin-top: -4rem;
+  }
+  .scroller {
+    top: -5rem;
+  }
+  #orbit-system {
+    transform: translate(6rem, -2rem);
+  }
+  footer .content {
+    justify-content: center;
+  }
+  footer .content p {
+    text-align: center;
+    margin-top: 1rem;
   }
 }
 /*********************
@@ -352,7 +420,7 @@ mobile 375
   }
 
   section#visual .mainText {
-    top: 8rem;
+    top: 12rem;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -373,8 +441,8 @@ mobile 375
     left: 50%;
     transform: translateX(-50%);
     font-size: 1rem;
-    top: 45%;
-    width: 70%;
+    top: 40%;
+    width: 75%;
     text-align: center;
     white-space: wrap;
     word-break: keep-all;
@@ -384,7 +452,7 @@ mobile 375
     transform: translateX(-50%);
     width: fit-content;
     text-align: center;
-    bottom: 4rem;
+    bottom: 16rem;
   }
   section#visual .contact p {
     font-size: 1rem;
@@ -410,7 +478,28 @@ mobile 375
   .aboutText {
     margin-top: -45rem;
   }
-
+  .portfolio .textWrap h3 {
+    font-size: 2rem;
+  }
+  .portfolio .textWrap p:nth-of-type(1) {
+    font-size: 1rem;
+  }
+  .portfolio .codeWrap {
+    gap: 1rem;
+  }
+  .portfolio .imgWrap {
+    width: 100%;
+    flex: initial;
+  }
+  .portfolio .textWrap .buttons {
+    margin-top: 40px;
+  }
+  .portfolio .textWrap span {
+    font-size: 0.9rem;
+  }
+  section#work {
+    padding-bottom: 10rem;
+  }
   .aboutText > h2 {
     color: #fff;
     font-size: var(--fontSize-label-2);
@@ -489,7 +578,7 @@ mobile 375
   /* #SECTION - contact */
 
   section#contact {
-    padding-top: 15rem;
+    padding-top: 3rem;
     min-height: 30vh;
   }
 
@@ -550,7 +639,9 @@ mobile 375
   .textRight .inputGroup:last-child {
     text-align: center;
   }
-
+  footer {
+    padding-top: 5rem;
+  }
   footer .content {
     justify-content: center;
   }
@@ -564,12 +655,18 @@ mobile 320
 **********************/
 
 @media (max-width: 320px) {
+  section#visual .mainText {
+    top: 8rem;
+  }
+  section#visual .subText {
+    top: 45%;
+  }
   section#visual .contact {
     left: 50%;
     transform: translateX(-50%);
     width: fit-content;
     text-align: center;
-    bottom: 6rem;
+    bottom: 5rem;
   }
   section#visual .contact p {
     font-size: 0.8rem;
@@ -577,10 +674,12 @@ mobile 320
   section#visual {
     min-height: 110vh;
   }
-
+  section#visual .space {
+    top: 10rem;
+  }
   section#work {
     padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
   }
   section#work .title a {
     font-size: 1rem;
@@ -589,7 +688,7 @@ mobile 320
     margin-right: 2rem;
   }
   .portfolio .codeWrap {
-    gap: 3rem;
+    gap: 1.5rem;
     text-align: center;
     font-size: 0.9rem;
   }
@@ -613,6 +712,9 @@ mobile 320
     left: 50%;
     min-width: 150px;
   }
+  .portfolio .imgDes span {
+    display: none;
+  }
   .textWrap button:nth-of-type(1) {
     margin-right: 0;
     margin-bottom: 1rem;
@@ -623,7 +725,7 @@ mobile 320
     color: #fff;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .portfolio .textWrap p:nth-of-type(1) {
     font-size: 1rem;
@@ -647,7 +749,7 @@ mobile 320
   }
   section#about {
     padding-top: 5rem;
-    padding-bottom: 25rem;
+    padding-bottom: 23rem;
   }
 
   section#about .mainTitle {
@@ -677,6 +779,9 @@ mobile 320
 
   section#contact {
     padding-top: 7rem;
+  }
+  footer {
+    padding-top: 3rem;
   }
   footer .content {
     margin-top: 5rem;

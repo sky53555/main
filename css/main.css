@@ -568,7 +568,7 @@ section#work .title a:hover {
   flex: 1;
 }
 .portfolio .textWrap h3 {
-  font-size: var(--fontSize-body-1);
+  font-size: var(--fontSize-body-3);
   margin-bottom: 30px;
 }
 .portfolio .textWrap p:nth-of-type(1) {
@@ -584,7 +584,7 @@ section#work .title a:hover {
   opacity: 0.8;
 }
 .portfolio .textWrap .buttons {
-  margin-top: 70px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;

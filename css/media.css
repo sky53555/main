@@ -231,6 +231,9 @@ tablet
     margin: 0 auto;
     gap: 0rem;
   }
+  section#contact{
+    padding-top: 6rem;
+  }
   section#contact .mainTitle {
     width: 85%;
   }

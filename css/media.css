@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 /*********************
-769부터 이상
+1280px
 **********************/
 @media (min-width: 769px) and (max-width: 1280px) {
   header nav {
@@ -135,9 +135,27 @@
     margin: 0 auto 40px;
   }
 }
-
 /*********************
-tablet
+1024
+**********************/
+@media (max-width: 1024px) {
+  section#visual .subText {
+    white-space: wrap;
+    top: 40%;
+    width: 55%;
+  }
+  section#visual .contact {
+    bottom: 25rem;
+  }
+  .portfolio .imgWrap {
+    flex: initial;
+  }
+  .portfolio .codeWrap {
+    gap: 3rem;
+  }
+}
+/*********************
+ 768px
 **********************/
 @media (min-width: 376px) and (max-width: 768px) {
   header nav {
@@ -231,7 +249,7 @@ tablet
     margin: 0 auto;
     gap: 0rem;
   }
-  section#contact{
+  section#contact {
     padding-top: 6rem;
   }
   section#contact .mainTitle {
